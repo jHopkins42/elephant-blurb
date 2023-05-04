@@ -11,6 +11,8 @@
 * [Questions](#questions)
 * [Screenshots](#Screenshots)
 * [Links](#links)
+* [Video](#video-walkthrough)
+* [Bonus](#waffles)
 
 ### License
 (https://img.shields.io/github/license/jhopkins42/elephant-blurb)
