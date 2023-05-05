@@ -6,11 +6,11 @@
       <label class='label title-label' id="{{blogsData.id}}">Title</label>
       <div class='control'>
         <input
-          class='input is-large'
+          class='input'
           id = "title"
           type='text'
           value='{{blogsData.blog_title}}'
-          placeholder='e.g. How much JavaScript should you know ?'
+          placeholder='e.g. Can I borrow a cup of JavaScript?'
           required
         />
       </div>
@@ -19,11 +19,11 @@
       <label class='label description-label'>Description</label>
       <div class='control'>
         <input
-          class='input is-large'
+          class='input'
           id = "description"
           type='text'
           value='{{blogsData.blog_description}}'
-          placeholder='e.g. How much JavaScript should you know ?'
+          placeholder='e.g. How much JavaScript is too much?'
           required
         />
       </div>
@@ -33,7 +33,7 @@
     <label class='label' for='content'>Content</label>
     <div class='control'>
       <textarea
-        class='textarea is-large'
+        class='textarea'
         name='message'
         id='content'
         required
@@ -42,8 +42,8 @@
   </div>
   <div class='field'>
     <div class='buttons'>
-      <button type="submit" class='edit-btn button is-medium is-success'>Save changes</button>
-      <a href="/blogs/{{blogsData.id}}" class='button is-medium is-danger'>Cancel</a>
+      <button type="submit" class='edit-btn'>Save changes</button>
+      <a href="/blogs/{{blogsData.id}}" class='button'>Cancel</a>
     </div>
   </div>
 </form>

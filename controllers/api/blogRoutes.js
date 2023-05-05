@@ -28,7 +28,7 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
-  // delete one blog by its `id` value
+  // delete by ID
   await Blog.destroy({
     where: {
       id: req.params.id,

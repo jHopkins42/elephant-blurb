@@ -13,9 +13,9 @@ second batch
 */
 
 /* fonts */
-<style>
+/* <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
-</style>
+</style> */
 
 :root {
     --decorator-outer-offset-top: 2px;
@@ -33,6 +33,10 @@ second batch
     background-color: #a7bcd9 !important;
   }
   
+  div {
+    column-count: 3;
+    column-gap: 20px;
+  }
   .link a {
     text-decoration: underline;
     color: #485fc7 !important;
@@ -102,7 +106,7 @@ second batch
  
   .btn {
     background-color: var(--background-color);
-    color: ;
+    color: #a7bcd9;
     padding: 0.5em 1em;
     border: none;
     outline: none;

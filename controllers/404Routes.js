@@ -1,3 +1,5 @@
+// Needed serious help in getting a 404 to work
+
 const router = require('express').Router();
 const { User, Blog, Comment } = require('../models');
 
@@ -22,7 +24,9 @@ router.get('/post', (req, res) => {
   res.render('createPost', { title: 'Tech Blog' });
 });
 
-// get all blogs
+// get all 
+
+
 router.get('/dashboard', async (req, res) => {
   if (!req.session.logged_in) {
     return res.redirect('/login');

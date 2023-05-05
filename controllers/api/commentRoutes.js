@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
-  // delete one comment by its `id` value
+  // delete comment by ID
   await Comment.destroy({
     where: {
       id: req.params.id,
