@@ -12,12 +12,17 @@ second batch
 #f7f7f7
 */
 
+/* fonts */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+</style>
+
 :root {
     --decorator-outer-offset-top: 2px;
     --decorator-outer-offset-left: 2px;
     --decorator-border-width: 1px;
     --decorator-outer-dim: 12px;
-    --decorator-border: 4px solid #f3e0e1;
+    --decorator-border: 4px solid #f7f7f7;
   }
   
   body,
@@ -25,7 +30,7 @@ second batch
   .navbar-brand,
   nav,
   footer {
-    background-color: #fff8f5 !important;
+    background-color: #a7bcd9 !important;
   }
   
   .link a {
@@ -64,14 +69,14 @@ second batch
   }
   
   hr {
-    background-color: #d2ddee !important;
+    background-color: #24527a !important;
     height: 1px !important;
   }
   
   .title {
     color: #4b5e6b;
     font: 24px;
-    font-family: 'Petrona', serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: underline;
   }
   
@@ -80,14 +85,14 @@ second batch
   }
   
   .work-sans {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #303546;
     font-size: 1rem;
   }
   
   .work-sans .is-sub-article {
     font-size: 0.5rem;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #303546;
   }
   
