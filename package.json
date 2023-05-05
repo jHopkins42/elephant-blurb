@@ -1,7 +1,7 @@
 {
   "name": "elephant-blurb",
   "version": "1.0.0",
-  "description": "",
+  "description": "* [License(s)](#license)\r * [Languages](#languages)\r * [Dependencies](#dependencies)\r * [Features](#features)\r * [How to use this application](#HowtoUseThisApplication)\r * [Contributors](#contributors)\r * [Testing](#testing)\r * [Questions](#questions)\r * [Screenshots](#Screenshots)\r * [Links](#links)\r * [Video](#video-walkthrough)\r * [Bonus](#waffles)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
     "fs": "^0.0.1-security",
     "inquirer": "^9.2.0",
     "mysql": "^2.18.1",
+    "node": "^20.1.0",
     "sequelize": "^6.31.1"
   }
 }

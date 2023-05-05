@@ -1,0 +1,27 @@
+
+{{> navbar}}
+        {{#if permission}}
+        <section class="m-3">
+<a href="/blogs/edit/{{blogsData.[0].id}}" class="button is-small is-success">Edit Blog</a>
+<button class="delete-btn button is-small is-danger">    <span>Delete</span>
+    <span class="icon is-small">
+      <i class="fas fa-times"></i></button>
+      </section>
+        {{/if}}
+<div class="container mt-3">
+{{#each blogsData}}
+{{> article}}
+{{/each}}
+
+{{> comment}}
+{{#each comments}}
+{{> commentCard}}
+{{/each}}
+</div>
+{{> footer}}
+    <script src='/js/toggle.js'></script>
+            {{#if signedIn}}
+    <script type="module" src='/js/createComment.js'></script>
+    <script type="module" src='/js/logout.js'></script>
+     {{/if}}
+        <script type="module" src='/js/toggleNavbar.js'></script>

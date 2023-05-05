@@ -1,0 +1,25 @@
+{{> navbar}}
+<div class="container">
+            {{#if signedIn}}
+            <section class="is-flex is-justify-content-space-between m-3">
+<h1>Welcome  <strong><em>{{user}}</em></strong></h1>
+<a href="/post" class="button is-success is-medium">New Article</a>
+</section>
+        {{/if}}
+                    {{#if loggedOut}}
+<a href="/register" class="button is-success is-medium">Sign up</a>
+<a href="/login" class="button is-success is-medium">Login</a>
+
+        {{/if}}
+
+<ul>
+{{#each blogsData}}
+{{> blogCard}}
+{{/each}}
+</ul>   
+</div>
+{{> footer}}
+            {{#if signedIn}}
+    <script type="module" src='/js/logout.js'></script>
+     {{/if}}
+            <script type="module" src='/js/toggleNavbar.js'></script>

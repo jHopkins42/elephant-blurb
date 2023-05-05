@@ -1,0 +1,56 @@
+{{> navbar}}
+<div class="container">
+<form id="edit-btn">
+  <div class='field'>
+    <div class='field'>
+      <label class='label title-label' id="{{blogsData.id}}">Title</label>
+      <div class='control'>
+        <input
+          class='input is-large'
+          id = "title"
+          type='text'
+          value='{{blogsData.blog_title}}'
+          placeholder='e.g. How much JavaScript should you know ?'
+          required
+        />
+      </div>
+    </div>
+        <div class='field'>
+      <label class='label description-label'>Description</label>
+      <div class='control'>
+        <input
+          class='input is-large'
+          id = "description"
+          type='text'
+          value='{{blogsData.blog_description}}'
+          placeholder='e.g. How much JavaScript should you know ?'
+          required
+        />
+      </div>
+    </div>
+  </div>
+  <div class='field'>
+    <label class='label' for='content'>Content</label>
+    <div class='control'>
+      <textarea
+        class='textarea is-large'
+        name='message'
+        id='content'
+        required
+      >{{blogsData.blog_body}}</textarea>
+    </div>
+  </div>
+  <div class='field'>
+    <div class='buttons'>
+      <button type="submit" class='edit-btn button is-medium is-success'>Save changes</button>
+      <a href="/blogs/{{blogsData.id}}" class='button is-medium is-danger'>Cancel</a>
+    </div>
+  </div>
+</form>
+</div>
+{{> footer}}
+    <script type="module" src='/js/editBlog.js'></script>
+            {{#if signedIn}}
+    <script type="module" src='/js/logout.js'></script>
+     {{/if}}
+                <script type="module" src='/js/toggleNavbar.js'></script>

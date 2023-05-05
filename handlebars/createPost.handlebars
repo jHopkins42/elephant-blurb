@@ -1,0 +1,59 @@
+{{> navbar}}
+<div class="container">
+<form id="create-blog">
+  <div class='field'>
+    <div class='field'>
+      <label class='label'>Title</label>
+      <div class='control'>
+        <input
+          class='input is-large'
+          id = "title"
+          type='text'
+          value=''
+          placeholder='e.g. How much JavaScript should you know ?'
+          required
+        />
+      </div>
+    </div>
+  </div>
+    <div class='field'>
+    <div class='field'>
+      <label class='label'>Description</label>
+      <div class='control'>
+        <input
+          class='input is-large'
+          id = "description"
+          type='text'
+          value=''
+          placeholder='e.g. In this article, we argue how much JavaScript you should know ...'
+          required
+        />
+      </div>
+    </div>
+  </div>
+  <div class='field'>
+    <label class='label' for='content'>Content</label>
+    <div class='control'>
+      <textarea
+        class='textarea is-large'
+        name='message'
+        id='content'
+        required
+      ></textarea>
+    </div>
+  </div>
+  <div class='field'>
+    <div class='buttons'>
+      <button type="submit" class='button is-medium is-success'>Create blog</button>
+      <a href="/" class='button is-medium is-light'>Cancel</a>
+    </div>
+  </div>
+</form>
+</div>
+{{> footer}}
+    <script type="module" src='/js/createBlog.js'></script>
+            {{#if signedIn}}
+    <script type="module" src='/js/logout.js'></script>
+     {{/if}}
+                <script type="module" src='/js/toggleNavbar.js'></script>
+                
